@@ -1,5 +1,5 @@
-# ![Logo](https://github.com/GovernIB/maven/raw/binaris/pluginsib/projectinfo_Attachments/icon.jpg) pluginsib-byentity  (pluginsib-2.0)
-*API i Plugins de ...*
+# ![Logo](https://github.com/GovernIB/maven/raw/binaris/pluginsib/projectinfo_Attachments/icon.jpg) pluginsib-byentity
+*API i Plugins de login per Santa Margalida*
 
  ***Versions***
 > - Versió Estable: -

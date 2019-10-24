@@ -4,7 +4,7 @@
 
 	<property name="home.dir" location="${basedir}/../../../.."/>
 	<property name="modul.dir" value="${basedir}/../.."/>
-	<property name="distribucion.dir" value="${home.dir}/output/product"/>
+	<property name="distribucion.dir" value="${home.dir}/output/moduls"/>
 		
     <property file="${basedir}/build.properties"/>
 	
@@ -13,12 +13,11 @@
     
 	<property name="lib.dir" location="${home.dir}/lib"/>
     <property name="output.dir" location="${modul.dir}/output"/>
-	<property name="modul.output.dir" location="${output.dir}/${modul}"/>
 
     <property name="jar.src" location="${basedir}/src"/>
     <property name="jar.doc" location="${basedir}/doc"/>
 
-    <property name="jar.classes" location="${modul.output.dir}/classes"/>
+    <property name="jar.classes" location="${output.dir}/classes"/>
 
     <property name="doc" location="${output.dir}/doc"/>
     <property name="jar.doc.api" location="${doc}/api/${modul}"/>

@@ -4,7 +4,7 @@
 
 	<property name="home.dir" location="${basedir}/../../../.."/>
 	<property name="modul.dir" value="${basedir}/../.."/>
-	<property name="distribucion.dir" value="${home.dir}/output/product"/>
+	<property name="distribucion.dir" value="${home.dir}/output/moduls"/>
 		
     <property file="${basedir}/build.properties"/>
 	
@@ -13,7 +13,6 @@
     
 	<property name="lib.dir" location="${home.dir}/lib"/>
     <property name="output.dir" location="${modul.dir}/output"/>
-	<property name="modul.output.dir" location="${output.dir}/${modul}"/>
 
     <property name="jar.src" location="${basedir}/src"/>
     <property name="jar.doc" location="${basedir}/doc"/>
@@ -30,8 +29,10 @@
    		</fileset>	    
     	<fileset dir="${lib.dir}">
     		<include name="commons-logging*.jar"/>
+    		<include name="commons-httpclient*.jar"/>
+    		<include name="commons-codec*.jar"/>
     		<include name="servlet.jar"/>
-   		</fileset>	    	
+   		</fileset>
     </path>	
 
 	<target name="clean" description="Destruye los directorios de trabajo">
@@ -95,8 +96,8 @@
         </javadoc>
     </target>
 	<target name="distribute" description="Distribucion">
-			<copy file="${output.dir}/moduls/loginModuleAPB.jar" todir="${distribucion.dir}"/>		
-		</target>
+		<copy file="${output.dir}/moduls/loginModuleAPB.jar" todir="${distribucion.dir}"/>		
+	</target>
     <target name="doc" depends="jar.javadoc" description="Realiza las tareas de documentación"/>
     <target name="main" depends="jar.jar,distribute" description="Construye el jar"/>
 

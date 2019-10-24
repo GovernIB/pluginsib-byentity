@@ -4,6 +4,8 @@
 	<classpathentry kind="src" path="moduls/plugin-login/moduls/loginModule/src"/>
 	<classpathentry kind="src" path="moduls/plugin-login/moduls/plugin/src"/>
 	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/servlet.jar"/>
 	<classpathentry kind="lib" path="lib/jboss/jbossall-client.jar"/>
 	<classpathentry kind="lib" path="lib/jboss/jboss-client.jar"/>

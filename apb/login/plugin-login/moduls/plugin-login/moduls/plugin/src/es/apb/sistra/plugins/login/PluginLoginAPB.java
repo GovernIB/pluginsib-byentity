@@ -103,6 +103,26 @@ public class PluginLoginAPB implements PluginLoginIntf {
         return ConfigurationUtil.getInstance().obtenerPropiedades()
                 .getProperty("contextAutenticadorClave");
     }
+    
+    /**
+     * Obtiene usuario de conexión con los servicios de LoginIB
+     * 
+     * @return usuario
+     */
+    public String obtenerUsuarioLoginIB() throws Exception {
+        return ConfigurationUtil.getInstance().obtenerPropiedades()
+                .getProperty("usuarioLoginIB");
+    }
+    
+    /**
+     * Obtiene el password del usuario de conexión con los servicios de LoginIB
+     * 
+     * @return password
+     */
+    public String obtenerPasswordLoginIB() throws Exception {
+        return ConfigurationUtil.getInstance().obtenerPropiedades()
+                .getProperty("passwordLoginIB");
+    }
 
     private Connection getConnection() throws Exception {
         Connection conn;

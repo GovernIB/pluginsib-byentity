@@ -13,6 +13,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import es.apb.sistra.loginmodule.ApbPrincipal;
+import es.caib.sistra.plugins.login.EvidenciasAutenticacion;
+import es.caib.sistra.plugins.login.PeticionInicioSesionAutenticacion;
 import es.caib.sistra.plugins.login.PluginLoginIntf;
 
 /**
@@ -169,5 +171,19 @@ public class PluginLoginAPB implements PluginLoginIntf {
         }
         return res;
     }
+
+	public EvidenciasAutenticacion getEvidenciasAutenticacion(
+			String paramString) {
+		return null;
+	}
+
+	public String getIdSesionAutenticacion(Principal paramPrincipal) {
+		return null;
+	}
+
+	public String iniciarSesionAutenticacion(
+			PeticionInicioSesionAutenticacion paramPeticionInicioSesion) {
+		return null;
+	}
 
 }

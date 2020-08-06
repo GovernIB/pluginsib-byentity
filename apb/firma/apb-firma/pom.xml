@@ -31,7 +31,7 @@
 		
 		<spring.version>3.2.13.RELEASE</spring.version>
 		<spring.security.version>3.2.7.RELEASE</spring.security.version>
-		<spring.batch.version>2.2.0.RELEASE</spring.batch.version>
+		<spring.batch.version>4.2.4.RELEASE</spring.batch.version>
 		
 		<!--  librerías de integr@ -->
 		<bcmail.version>1.46</bcmail.version>

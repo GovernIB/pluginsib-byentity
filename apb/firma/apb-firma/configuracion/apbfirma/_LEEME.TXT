@@ -1,0 +1,15 @@
+JKS / P12
+-------------------------------------------------------------------------
+LOS JKS SON LOS QUE ESTÁN EN CADA ENTORNO DE LA APB:
+	trustedstoreAFIRMA.jks
+	trustedstoreHTTPS.jks
+
+TAMBIÉN ESTÁ EN CADA ENTORNO DE LA APB, EL P12 DEL SELLO DE LA APB:
+	apb.p12
+
+ESTOS DEL SVN NO SE ACTUALIZAN PARA NO CONTENER INFO SENSIBLE
+
+
+configuracion.properties
+-------------------------------------------------------------------------
+ADAPTAR SEGÚN LA CONFIGURACIÓN EN CADA ENTORNO

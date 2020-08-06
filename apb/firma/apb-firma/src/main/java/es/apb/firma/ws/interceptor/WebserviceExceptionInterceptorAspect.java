@@ -29,6 +29,7 @@ public final class WebserviceExceptionInterceptorAspect {
     /**
      * Log del interceptor.
      */
+     
     private final Logger log = LoggerFactory
             .getLogger(WebserviceExceptionInterceptorAspect.class);
 
@@ -56,6 +57,8 @@ public final class WebserviceExceptionInterceptorAspect {
     	
     	// Realizamos log excepcion
         log.trace("Interceptamos excepcion: " + ex.getClass().getName());
+        
+        log.error(ex.getMessage(), ex);
         
         // Traducimos excepcion a WSException
         if (!(ex instanceof WException)) {

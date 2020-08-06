@@ -103,10 +103,13 @@ public class PluginFirmaAPB implements PluginFirmaIntf {
             throws Exception {
         log.debug("Invocamos a apb-firma...");
         final PeticionValidar peticionValidar = new PeticionValidar();
-        peticionValidar.setDocumento(IOUtils.toByteArray(datos));
+        FormatoFirma formatoFirmaAPB = UtilFirmaAPB
+                .traducirFormatoPlgFirmaToApb(firma.getFormatoFirma());
+        if (formatoFirmaAPB != FormatoFirma.PADES) {
+        	peticionValidar.setDocumento(IOUtils.toByteArray(datos));
+        }
         peticionValidar.setFirma(firma.getContenidoFirma());
-        peticionValidar.setFormato(UtilFirmaAPB
-                .traducirFormatoPlgFirmaToApb(firma.getFormatoFirma()));
+		peticionValidar.setFormato(formatoFirmaAPB);
         final ValidarRequest validarRequest = new ValidarRequest();
         validarRequest.setPeticion(peticionValidar);
 

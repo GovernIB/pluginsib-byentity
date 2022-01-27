@@ -38,7 +38,7 @@
 		
 		<hibernate-core-version>3.6.10.Final</hibernate-core-version>
 		
-		<xerces.version>2.10.0</xerces.version>
+		<xerces.version>2.12.2</xerces.version>
 		
 		<cxf.version>2.4.10</cxf.version>
 		

@@ -34,7 +34,7 @@
 		<servlet-api.version>2.5</servlet-api.version>
 		
 		<spring.version>3.2.13.RELEASE</spring.version>
-		<spring.security.version>3.2.7.RELEASE</spring.security.version>
+		<spring.security.version>5.5.7</spring.security.version>
 		
 		<hibernate-core-version>3.6.10.Final</hibernate-core-version>
 		

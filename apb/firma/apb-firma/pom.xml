@@ -25,7 +25,7 @@
 		<slf4j.version>1.6.1</slf4j.version>
 		<aspectj.version>1.6.10</aspectj.version>
 		<cglib.version>2.2</cglib.version>
-		<cxf.version>2.4.10</cxf.version>
+		<cxf.version>2.6.12</cxf.version>
 		<asm.version>3.1</asm.version>
 		<servlet-api.version>2.5</servlet-api.version>
 

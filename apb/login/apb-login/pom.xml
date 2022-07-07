@@ -40,7 +40,7 @@
 		
 		<xerces.version>2.10.0</xerces.version>
 		
-		<cxf.version>2.4.10</cxf.version>
+		<cxf.version>2.6.12</cxf.version>
 		
 	</properties>
 	
